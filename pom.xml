@@ -40,12 +40,48 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+	
+		
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>6.1.0.Alpha2</version>
+		</dependency>
+		
+	<!-- 	#LOGGING STUFF 
+		 <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter</artifactId>
+		</dependency> -->
+		
+			<!-- LOGGING STUFF -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- Do I need the below 3 dependencies for logging? Do I need to explicitly mention it? -->
+		 <dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.2.3</version>
+		    <scope>compile</scope>
+		  </dependency>
+		  <dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-to-slf4j</artifactId>
+		    <version>2.11.1</version>
+		    <scope>compile</scope>
+		  </dependency>
+		  <dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>jul-to-slf4j</artifactId>
+		    <version>1.7.25</version>
+		    <scope>compile</scope>
+		  </dependency>
         
 	</dependencies>
 
